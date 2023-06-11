@@ -12,6 +12,7 @@ let cityNameCellIdentiifier = "cityNameCellIdentiifier"
 
 class ViewController: UIViewController {
     
+    // MARK: - IBoutlets
     @IBOutlet weak var searchBar: UISearchBar!
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -19,17 +20,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var temparatureLabel: UILabel!
     @IBOutlet weak var conditionImageView: UIImageView!
     
-    
     @IBOutlet weak var locationTempratureLabel: UILabel!
     @IBOutlet weak var locationNameLabel: UILabel!
     @IBOutlet weak var locationConditionImageView: UIImageView!
     @IBOutlet weak var locationForecastLabel: UILabel!
     @IBOutlet weak var locationConditionLabel: UILabel!
     
+    // MARK: - Service
     lazy var geoCodeService = GeoCodeService()
     lazy var openWeatherService = OpenWeatherService()
     lazy var locationService = LocationService()
     
+    // MARK: - Setters
     var geoCodeWeather: OpenWeather? {
         didSet{
             self.updateWeatherUI()
@@ -42,6 +44,8 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: - Lifecycle ovverides
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view
@@ -50,7 +54,8 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        
+        // This could have handled better if all this handled by a ViewModel.
         locationService.start { location in
             self.openWeatherService.getWeather(coord: Coord(lon: location.coordinate.longitude, lat: location.coordinate.latitude)) { success, weather, error in
                 self.locationWeather = weather
@@ -72,8 +77,8 @@ class ViewController: UIViewController {
 
     }
 }
-//MARK: - UI updates
 
+//MARK: - UI updates
 extension ViewController {
     func updateWeatherUI() {
         if let weatherData = geoCodeWeather {
@@ -106,6 +111,8 @@ extension ViewController {
         }
     }
 }
+
+// MARK: - SearchBar Delegate
 
 extension ViewController: UISearchBarDelegate {
     
