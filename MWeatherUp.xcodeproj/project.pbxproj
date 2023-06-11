@@ -12,6 +12,7 @@
 		3D03264F2A361B910095A157 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03264E2A361B910095A157 /* Double+Extension.swift */; };
 		3D0326512A361BD60095A157 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0326502A361BD60095A157 /* Strings.swift */; };
 		3D0326562A362F610095A157 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3D0326552A362F610095A157 /* Kingfisher */; };
+		3D0326582A363BCE0095A157 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0326572A363BCE0095A157 /* LocationService.swift */; };
 		3D8565712A35C8F200F12CCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8565702A35C8F200F12CCB /* AppDelegate.swift */; };
 		3D8565732A35C8F200F12CCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8565722A35C8F200F12CCB /* SceneDelegate.swift */; };
 		3D8565752A35C8F200F12CCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8565742A35C8F200F12CCB /* ViewController.swift */; };
@@ -55,6 +56,7 @@
 		3D03264B2A361A5A0095A157 /* UserDefault+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Extensions.swift"; sourceTree = "<group>"; };
 		3D03264E2A361B910095A157 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		3D0326502A361BD60095A157 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		3D0326572A363BCE0095A157 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		3D85656D2A35C8F200F12CCB /* MWeatherUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWeatherUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8565702A35C8F200F12CCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D8565722A35C8F200F12CCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			children = (
 				3DAD482E2A35DFDB00BD57C9 /* OpenWeatherService.swift */,
 				3DAD48302A35DFE800BD57C9 /* GeoCodeService.swift */,
+				3D0326572A363BCE0095A157 /* LocationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				3D03264C2A361A5A0095A157 /* UserDefault+Extensions.swift in Sources */,
 				3DAD482F2A35DFDB00BD57C9 /* OpenWeatherService.swift in Sources */,
 				3D8565A42A35CACE00F12CCB /* OpenWeather.swift in Sources */,
+				3D0326582A363BCE0095A157 /* LocationService.swift in Sources */,
 				3DAD482C2A35D21600BD57C9 /* GeoCode.swift in Sources */,
 				3D0326512A361BD60095A157 /* Strings.swift in Sources */,
 				3D8565732A35C8F200F12CCB /* SceneDelegate.swift in Sources */,

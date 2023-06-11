@@ -13,13 +13,22 @@ let cityNameCellIdentiifier = "cityNameCellIdentiifier"
 class ViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var conditionLabel: UILabel!
     @IBOutlet weak var temparatureLabel: UILabel!
     @IBOutlet weak var conditionImageView: UIImageView!
     
+    
+    @IBOutlet weak var locationTempratureLabel: UILabel!
+    @IBOutlet weak var locationNameLabel: UILabel!
+    @IBOutlet weak var locationConditionImageView: UIImageView!
+    @IBOutlet weak var locationForecastLabel: UILabel!
+    @IBOutlet weak var locationConditionLabel: UILabel!
+    
     lazy var geoCodeService = GeoCodeService()
     lazy var openWeatherService = OpenWeatherService()
+    lazy var locationService = LocationService()
     
     var geoCodeWeather: OpenWeather? {
         didSet{
@@ -27,14 +36,27 @@ class ViewController: UIViewController {
         }
     }
     
+    var locationWeather: OpenWeather? {
+        didSet{
+            self.updateLocationWeatherUI()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
 
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+
+        locationService.start { location in
+            self.openWeatherService.getWeather(coord: Coord(lon: location.coordinate.longitude, lat: location.coordinate.latitude)) { success, weather, error in
+                self.locationWeather = weather
+                print(weather?.name ?? "NO data")
+            }
+        }
         
         if let lastSearched = UserDefaults.lastSearchedCity {
             geoCodeService.getGeoCodeData(searchString: lastSearched) { success, results, error in
@@ -47,8 +69,10 @@ class ViewController: UIViewController {
                 }
             }
         }
+
     }
 }
+//MARK: - UI updates
 
 extension ViewController {
     func updateWeatherUI() {
@@ -64,7 +88,22 @@ extension ViewController {
                 )
             }
         }
-       
+    }
+    
+    func updateLocationWeatherUI() {
+        if let weatherData = locationWeather {
+            DispatchQueue.main.async {
+                self.locationTempratureLabel.text = weatherData.main.temp.temperatureString()
+                self.locationNameLabel.text = weatherData.name
+                self.locationConditionLabel.text = "\(weatherData.weather.first?.description ?? "--")"
+                self.locationForecastLabel.text = "H:\(weatherData.main.tempMax.temperatureString()) \tL:\(weatherData.main.tempMin.temperatureString())"
+                let icon = weatherData.weather.first?.icon ?? ""
+                self.locationConditionImageView.kf.setImage(
+                    with: URL(string: "https://openweathermap.org/img/wn/\(icon)@2x.png"),
+                    placeholder: nil
+                )
+            }
+        }
     }
 }
 
