@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D03264A2A360F3B0095A157 /* Configuaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0326492A360F3B0095A157 /* Configuaration.swift */; };
+		3D03264C2A361A5A0095A157 /* UserDefault+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03264B2A361A5A0095A157 /* UserDefault+Extensions.swift */; };
+		3D03264F2A361B910095A157 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03264E2A361B910095A157 /* Double+Extension.swift */; };
+		3D0326512A361BD60095A157 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0326502A361BD60095A157 /* Strings.swift */; };
+		3D0326562A362F610095A157 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3D0326552A362F610095A157 /* Kingfisher */; };
 		3D8565712A35C8F200F12CCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8565702A35C8F200F12CCB /* AppDelegate.swift */; };
 		3D8565732A35C8F200F12CCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8565722A35C8F200F12CCB /* SceneDelegate.swift */; };
 		3D8565752A35C8F200F12CCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8565742A35C8F200F12CCB /* ViewController.swift */; };
@@ -17,6 +22,10 @@
 		3D8565922A35C8F300F12CCB /* MWeatherUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8565912A35C8F300F12CCB /* MWeatherUpUITests.swift */; };
 		3D8565942A35C8F300F12CCB /* MWeatherUpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8565932A35C8F300F12CCB /* MWeatherUpUITestsLaunchTests.swift */; };
 		3D8565A42A35CACE00F12CCB /* OpenWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8565A32A35CACE00F12CCB /* OpenWeather.swift */; };
+		3DAD482C2A35D21600BD57C9 /* GeoCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD482B2A35D21600BD57C9 /* GeoCode.swift */; };
+		3DAD482F2A35DFDB00BD57C9 /* OpenWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD482E2A35DFDB00BD57C9 /* OpenWeatherService.swift */; };
+		3DAD48312A35DFE800BD57C9 /* GeoCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD48302A35DFE800BD57C9 /* GeoCodeService.swift */; };
+		3DAD48332A35E21900BD57C9 /* GeoCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD48322A35E21900BD57C9 /* GeoCodeViewModel.swift */; };
 		5EC016D65B2AC318087C8AB2 /* Pods_MWeatherUp_MWeatherUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62324DAECF92D14AE716119D /* Pods_MWeatherUp_MWeatherUpUITests.framework */; };
 		C3B56533EF438CED4E1B9FCD /* Pods_MWeatherUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4168AD8CBD0D3217FE569154 /* Pods_MWeatherUpTests.framework */; };
 		FCA92D0EA12AB804F16B5709 /* Pods_MWeatherUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4E8549D9587CC379112F01 /* Pods_MWeatherUp.framework */; };
@@ -42,6 +51,10 @@
 /* Begin PBXFileReference section */
 		1D4E8549D9587CC379112F01 /* Pods_MWeatherUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MWeatherUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EB84403143BC2405E8E08BE /* Pods-MWeatherUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWeatherUp.debug.xcconfig"; path = "Target Support Files/Pods-MWeatherUp/Pods-MWeatherUp.debug.xcconfig"; sourceTree = "<group>"; };
+		3D0326492A360F3B0095A157 /* Configuaration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuaration.swift; sourceTree = "<group>"; };
+		3D03264B2A361A5A0095A157 /* UserDefault+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Extensions.swift"; sourceTree = "<group>"; };
+		3D03264E2A361B910095A157 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		3D0326502A361BD60095A157 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		3D85656D2A35C8F200F12CCB /* MWeatherUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWeatherUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8565702A35C8F200F12CCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D8565722A35C8F200F12CCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +69,10 @@
 		3D8565912A35C8F300F12CCB /* MWeatherUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWeatherUpUITests.swift; sourceTree = "<group>"; };
 		3D8565932A35C8F300F12CCB /* MWeatherUpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWeatherUpUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3D8565A32A35CACE00F12CCB /* OpenWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeather.swift; sourceTree = "<group>"; };
+		3DAD482B2A35D21600BD57C9 /* GeoCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCode.swift; sourceTree = "<group>"; };
+		3DAD482E2A35DFDB00BD57C9 /* OpenWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherService.swift; sourceTree = "<group>"; };
+		3DAD48302A35DFE800BD57C9 /* GeoCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCodeService.swift; sourceTree = "<group>"; };
+		3DAD48322A35E21900BD57C9 /* GeoCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCodeViewModel.swift; sourceTree = "<group>"; };
 		4168AD8CBD0D3217FE569154 /* Pods_MWeatherUpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MWeatherUpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62324DAECF92D14AE716119D /* Pods_MWeatherUp_MWeatherUpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MWeatherUp_MWeatherUpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB80AF8AD4A8A9D33242E95 /* Pods-MWeatherUp-MWeatherUpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWeatherUp-MWeatherUpUITests.debug.xcconfig"; path = "Target Support Files/Pods-MWeatherUp-MWeatherUpUITests/Pods-MWeatherUp-MWeatherUpUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0326562A362F610095A157 /* Kingfisher in Frameworks */,
 				FCA92D0EA12AB804F16B5709 /* Pods_MWeatherUp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +111,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D0326482A360F190095A157 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				3D0326492A360F3B0095A157 /* Configuaration.swift */,
+				3D0326502A361BD60095A157 /* Strings.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		3D03264D2A361A6E0095A157 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3D03264B2A361A5A0095A157 /* UserDefault+Extensions.swift */,
+				3D03264E2A361B910095A157 /* Double+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		3D8565642A35C8F200F12CCB = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +154,8 @@
 		3D85656F2A35C8F200F12CCB /* MWeatherUp */ = {
 			isa = PBXGroup;
 			children = (
+				3D0326482A360F190095A157 /* Config */,
+				3DAD482D2A35DFC100BD57C9 /* Services */,
 				3D8565A22A35C94B00F12CCB /* Models */,
 				3D8565A12A35C93900F12CCB /* Views */,
 				3D8565A02A35C92400F12CCB /* ViewModels */,
@@ -128,6 +166,7 @@
 				3D8565792A35C8F300F12CCB /* Assets.xcassets */,
 				3D85657B2A35C8F300F12CCB /* LaunchScreen.storyboard */,
 				3D85657E2A35C8F300F12CCB /* Info.plist */,
+				3D03264D2A361A6E0095A157 /* Extension */,
 			);
 			path = MWeatherUp;
 			sourceTree = "<group>";
@@ -152,6 +191,7 @@
 		3D8565A02A35C92400F12CCB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				3DAD48322A35E21900BD57C9 /* GeoCodeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -167,8 +207,18 @@
 			isa = PBXGroup;
 			children = (
 				3D8565A32A35CACE00F12CCB /* OpenWeather.swift */,
+				3DAD482B2A35D21600BD57C9 /* GeoCode.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3DAD482D2A35DFC100BD57C9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3DAD482E2A35DFDB00BD57C9 /* OpenWeatherService.swift */,
+				3DAD48302A35DFE800BD57C9 /* GeoCodeService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		4DABCD9C47EF2A26E7CC8DB8 /* Pods */ = {
@@ -181,7 +231,6 @@
 				FC485F2A1006ED7D2046B27E /* Pods-MWeatherUpTests.debug.xcconfig */,
 				B46F47E0C3968D34482B569A /* Pods-MWeatherUpTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,6 +262,9 @@
 			dependencies = (
 			);
 			name = MWeatherUp;
+			packageProductDependencies = (
+				3D0326552A362F610095A157 /* Kingfisher */,
+			);
 			productName = MWeatherUp;
 			productReference = 3D85656D2A35C8F200F12CCB /* MWeatherUp.app */;
 			productType = "com.apple.product-type.application";
@@ -288,6 +340,9 @@
 				Base,
 			);
 			mainGroup = 3D8565642A35C8F200F12CCB;
+			packageReferences = (
+				3D0326542A362F610095A157 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 3D85656E2A35C8F200F12CCB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -434,9 +489,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D03264A2A360F3B0095A157 /* Configuaration.swift in Sources */,
+				3DAD48312A35DFE800BD57C9 /* GeoCodeService.swift in Sources */,
 				3D8565752A35C8F200F12CCB /* ViewController.swift in Sources */,
 				3D8565712A35C8F200F12CCB /* AppDelegate.swift in Sources */,
+				3DAD48332A35E21900BD57C9 /* GeoCodeViewModel.swift in Sources */,
+				3D03264F2A361B910095A157 /* Double+Extension.swift in Sources */,
+				3D03264C2A361A5A0095A157 /* UserDefault+Extensions.swift in Sources */,
+				3DAD482F2A35DFDB00BD57C9 /* OpenWeatherService.swift in Sources */,
 				3D8565A42A35CACE00F12CCB /* OpenWeather.swift in Sources */,
+				3DAD482C2A35D21600BD57C9 /* GeoCode.swift in Sources */,
+				3D0326512A361BD60095A157 /* Strings.swift in Sources */,
 				3D8565732A35C8F200F12CCB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -785,6 +848,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D0326542A362F610095A157 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D0326552A362F610095A157 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D0326542A362F610095A157 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D8565652A35C8F200F12CCB /* Project object */;
 }

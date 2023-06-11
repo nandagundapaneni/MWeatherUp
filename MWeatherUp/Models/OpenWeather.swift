@@ -1,13 +1,11 @@
+// This file was generated from JSON Schema using quicktype, do not modify it directly.
+// To parse the JSON, add this file to your project and do:
 //
-//  OpenWeather.swift
-//  MWeatherUp
-//
-//  Created by Nanda Gundapaneni on 11/06/23.
-//
+//   let openWeather = try? JSONDecoder().decode(OpenWeather.self, from: jsonData)
 
 import Foundation
 
-// MARK: - OpenWeatherData
+// MARK: - OpenWeather
 struct OpenWeather: Codable {
     let coord: Coord
     let weather: [Weather]
@@ -36,7 +34,7 @@ struct Coord: Codable {
 // MARK: - Main
 struct Main: Codable {
     let temp, feelsLike, tempMin, tempMax: Double
-    let pressure, humidity, seaLevel, grndLevel: Int
+    let pressure, humidity: Int
 
     enum CodingKeys: String, CodingKey {
         case temp
@@ -44,8 +42,6 @@ struct Main: Codable {
         case tempMin = "temp_min"
         case tempMax = "temp_max"
         case pressure, humidity
-        case seaLevel = "sea_level"
-        case grndLevel = "grnd_level"
     }
 }
 
@@ -66,5 +62,4 @@ struct Weather: Codable {
 struct Wind: Codable {
     let speed: Double
     let deg: Int
-    let gust: Double
 }
