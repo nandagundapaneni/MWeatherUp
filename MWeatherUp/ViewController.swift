@@ -117,7 +117,7 @@ extension ViewController {
 extension ViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
+        searchBar.resignFirstResponder()
         geoCodeService.getGeoCodeData(searchString: searchBar.text ?? "New York") { success, results, error in
             if let results = results, let first = results.first {
                 UserDefaults.lastSearchedCity = first.name
